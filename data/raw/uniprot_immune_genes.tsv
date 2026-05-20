@@ -1,0 +1,21 @@
+Entry	Entry Name	Gene Names (primary)	Protein names	Organism	Length
+P05231	IL6_HUMAN	IL6	Interleukin-6 (IL-6) (B-cell stimulatory factor 2) (BSF-2) (CTL differentiation factor) (CDF) (Hybridoma growth factor) (Interferon beta-2) (IFN-beta-2)	Homo sapiens (Human)	212
+P01584	IL1B_HUMAN	IL1B	Interleukin-1 beta (IL-1 beta) (Catabolin)	Homo sapiens (Human)	269
+P01375	TNFA_HUMAN	TNF	Tumor necrosis factor (Cachectin) (TNF-alpha) (Tumor necrosis factor ligand superfamily member 2) (TNF-a) [Cleaved into: Tumor necrosis factor, membrane form (N-terminal fragment) (NTF); Intracellular domain 1 (ICD1); Intracellular domain 2 (ICD2); C-domain 1; C-domain 2; Tumor necrosis factor, soluble form]	Homo sapiens (Human)	233
+P01579	IFNG_HUMAN	IFNG	Interferon gamma (IFN-gamma) (Immune interferon)	Homo sapiens (Human)	166
+P22301	IL10_HUMAN	IL10	Interleukin-10 (IL-10) (Cytokine synthesis inhibitory factor) (CSIF)	Homo sapiens (Human)	178
+P10145	IL8_HUMAN	CXCL8	Interleukin-8 (IL-8) (C-X-C motif chemokine 8) (Chemokine (C-X-C motif) ligand 8) (Emoctakin) (Granulocyte chemotactic protein 1) (GCP-1) (Monocyte-derived neutrophil chemotactic factor) (MDNCF) (Monocyte-derived neutrophil-activating peptide) (MONAP) (Neutrophil-activating protein 1) (NAP-1) (Protein 3-10C) (T-cell chemotactic factor) [Cleaved into: MDNCF-a (GCP/IL-8 protein IV) (IL8/NAP1 form I); Interleukin-8 ((Ala-IL-8)77) (GCP/IL-8 protein II) (IL-8(1-77)) (IL8/NAP1 form II) (MDNCF-b); IL-8(5-77); IL-8(6-77) ((Ser-IL-8)72) (GCP/IL-8 protein I) (IL8/NAP1 form III) (Lymphocyte-derived neutrophil-activating factor) (LYNAP) (MDNCF-c) (Neutrophil-activating factor) (NAF); IL-8(7-77) (GCP/IL-8 protein V) (IL8/NAP1 form IV); IL-8(8-77) (GCP/IL-8 protein VI) (IL8/NAP1 form V); IL-8(9-77) (GCP/IL-8 protein III) (IL8/NAP1 form VI)]	Homo sapiens (Human)	99
+P13500	CCL2_HUMAN	CCL2	C-C motif chemokine 2 (HC11) (Monocyte chemoattractant protein 1) (Monocyte chemotactic and activating factor) (MCAF) (Monocyte chemotactic protein 1) (MCP-1) (Monocyte secretory protein JE) (Small-inducible cytokine A2)	Homo sapiens (Human)	99
+O60603	TLR2_HUMAN	TLR2	Toll-like receptor 2 (Toll/interleukin-1 receptor-like protein 4) (CD antigen CD282)	Homo sapiens (Human)	784
+O00206	TLR4_HUMAN	TLR4	Toll-like receptor 4 (hToll) (CD antigen CD284)	Homo sapiens (Human)	839
+P08571	CD14_HUMAN	CD14	Monocyte differentiation antigen CD14 (My23 antigen) (Myeloid cell-specific leucine-rich glycoprotein) (CD antigen CD14) [Cleaved into: Monocyte differentiation antigen CD14, urinary form; Monocyte differentiation antigen CD14, membrane-bound form]	Homo sapiens (Human)	375
+Q99836	MYD88_HUMAN	MYD88	Myeloid differentiation primary response protein MyD88	Homo sapiens (Human)	296
+P19838	NFKB1_HUMAN	NFKB1	Nuclear factor NF-kappa-B p105 subunit (DNA-binding factor KBF1) (EBP-1) (Nuclear factor of kappa light polypeptide gene enhancer in B-cells 1) [Cleaved into: Nuclear factor NF-kappa-B p50 subunit]	Homo sapiens (Human)	968
+Q04206	TF65_HUMAN	RELA	Transcription factor p65 (Nuclear factor NF-kappa-B p65 subunit) (Nuclear factor of kappa light polypeptide gene enhancer in B-cells 3)	Homo sapiens (Human)	551
+P42224	STAT1_HUMAN	STAT1	Signal transducer and activator of transcription 1-alpha/beta (Transcription factor ISGF-3 components p91/p84)	Homo sapiens (Human)	750
+P40763	STAT3_HUMAN	STAT3	Signal transducer and activator of transcription 3 (Acute-phase response factor)	Homo sapiens (Human)	770
+P23458	JAK1_HUMAN	JAK1	Tyrosine-protein kinase JAK1 (EC 2.7.10.2) (Janus kinase 1) (JAK-1)	Homo sapiens (Human)	1154
+O60674	JAK2_HUMAN	JAK2	Tyrosine-protein kinase JAK2 (EC 2.7.10.2) (Janus kinase 2) (JAK-2)	Homo sapiens (Human)	1132
+Q14653	IRF3_HUMAN	IRF3	Interferon regulatory factor 3 (IRF-3)	Homo sapiens (Human)	427
+Q92985	IRF7_HUMAN	IRF7	Interferon regulatory factor 7 (IRF-7)	Homo sapiens (Human)	503
+P01903	DRA_HUMAN	HLA-DRA	HLA class II histocompatibility antigen, DR alpha chain (MHC class II antigen DRA)	Homo sapiens (Human)	254

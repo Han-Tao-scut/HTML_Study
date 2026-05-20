@@ -1,0 +1,381 @@
+gene_symbol,ensembl_id,sample_name,tissue,condition_name,expression_value,expression_unit,source_database
+IL6,ENSG00000136244,MAIT T-cell,MAIT T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,NK-cell,NK-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,T-reg,T-reg,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,basophil,basophil,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,classical monocyte,classical monocyte,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,eosinophil,eosinophil,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,gdT-cell,gdT-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,intermediate monocyte,intermediate monocyte,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,memory B-cell,memory B-cell,normal immune cell,2.7,TPM,Human Protein Atlas
+IL6,ENSG00000136244,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,myeloid DC,myeloid DC,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,naive B-cell,naive B-cell,normal immune cell,3.9,TPM,Human Protein Atlas
+IL6,ENSG00000136244,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,neutrophil,neutrophil,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,non-classical monocyte,non-classical monocyte,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,plasmacytoid DC,plasmacytoid DC,normal immune cell,0.0,TPM,Human Protein Atlas
+IL6,ENSG00000136244,total PBMC,total PBMC,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,MAIT T-cell,MAIT T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,NK-cell,NK-cell,normal immune cell,0.2,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,T-reg,T-reg,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,basophil,basophil,normal immune cell,1.6,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,classical monocyte,classical monocyte,normal immune cell,9.4,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,eosinophil,eosinophil,normal immune cell,3.5,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,gdT-cell,gdT-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,intermediate monocyte,intermediate monocyte,normal immune cell,15.8,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,memory B-cell,memory B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,myeloid DC,myeloid DC,normal immune cell,16.5,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,naive B-cell,naive B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,neutrophil,neutrophil,normal immune cell,61.5,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,non-classical monocyte,non-classical monocyte,normal immune cell,6.3,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,plasmacytoid DC,plasmacytoid DC,normal immune cell,0.0,TPM,Human Protein Atlas
+IL1B,ENSG00000125538,total PBMC,total PBMC,normal immune cell,1.3,TPM,Human Protein Atlas
+TNF,ENSG00000232810,MAIT T-cell,MAIT T-cell,normal immune cell,40.3,TPM,Human Protein Atlas
+TNF,ENSG00000232810,NK-cell,NK-cell,normal immune cell,2.9,TPM,Human Protein Atlas
+TNF,ENSG00000232810,T-reg,T-reg,normal immune cell,13.3,TPM,Human Protein Atlas
+TNF,ENSG00000232810,basophil,basophil,normal immune cell,0.0,TPM,Human Protein Atlas
+TNF,ENSG00000232810,classical monocyte,classical monocyte,normal immune cell,8.6,TPM,Human Protein Atlas
+TNF,ENSG00000232810,eosinophil,eosinophil,normal immune cell,0.0,TPM,Human Protein Atlas
+TNF,ENSG00000232810,gdT-cell,gdT-cell,normal immune cell,27.6,TPM,Human Protein Atlas
+TNF,ENSG00000232810,intermediate monocyte,intermediate monocyte,normal immune cell,33.7,TPM,Human Protein Atlas
+TNF,ENSG00000232810,memory B-cell,memory B-cell,normal immune cell,5.7,TPM,Human Protein Atlas
+TNF,ENSG00000232810,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,18.1,TPM,Human Protein Atlas
+TNF,ENSG00000232810,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,15.1,TPM,Human Protein Atlas
+TNF,ENSG00000232810,myeloid DC,myeloid DC,normal immune cell,6.9,TPM,Human Protein Atlas
+TNF,ENSG00000232810,naive B-cell,naive B-cell,normal immune cell,6.5,TPM,Human Protein Atlas
+TNF,ENSG00000232810,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,5.0,TPM,Human Protein Atlas
+TNF,ENSG00000232810,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,6.1,TPM,Human Protein Atlas
+TNF,ENSG00000232810,neutrophil,neutrophil,normal immune cell,14.3,TPM,Human Protein Atlas
+TNF,ENSG00000232810,non-classical monocyte,non-classical monocyte,normal immune cell,60.1,TPM,Human Protein Atlas
+TNF,ENSG00000232810,plasmacytoid DC,plasmacytoid DC,normal immune cell,4.4,TPM,Human Protein Atlas
+TNF,ENSG00000232810,total PBMC,total PBMC,normal immune cell,6.7,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,MAIT T-cell,MAIT T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,NK-cell,NK-cell,normal immune cell,1.1,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,T-reg,T-reg,normal immune cell,0.1,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,basophil,basophil,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,classical monocyte,classical monocyte,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,eosinophil,eosinophil,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,gdT-cell,gdT-cell,normal immune cell,6.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,intermediate monocyte,intermediate monocyte,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,memory B-cell,memory B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,2.3,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,6.6,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,myeloid DC,myeloid DC,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,naive B-cell,naive B-cell,normal immune cell,0.3,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,0.5,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,3.7,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,neutrophil,neutrophil,normal immune cell,0.1,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,non-classical monocyte,non-classical monocyte,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,plasmacytoid DC,plasmacytoid DC,normal immune cell,0.0,TPM,Human Protein Atlas
+IFNG,ENSG00000111537,total PBMC,total PBMC,normal immune cell,0.4,TPM,Human Protein Atlas
+IL10,ENSG00000136634,MAIT T-cell,MAIT T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,NK-cell,NK-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,T-reg,T-reg,normal immune cell,0.3,TPM,Human Protein Atlas
+IL10,ENSG00000136634,basophil,basophil,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,classical monocyte,classical monocyte,normal immune cell,1.4,TPM,Human Protein Atlas
+IL10,ENSG00000136634,eosinophil,eosinophil,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,gdT-cell,gdT-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,intermediate monocyte,intermediate monocyte,normal immune cell,1.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,memory B-cell,memory B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,0.2,TPM,Human Protein Atlas
+IL10,ENSG00000136634,myeloid DC,myeloid DC,normal immune cell,0.1,TPM,Human Protein Atlas
+IL10,ENSG00000136634,naive B-cell,naive B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,neutrophil,neutrophil,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,non-classical monocyte,non-classical monocyte,normal immune cell,0.4,TPM,Human Protein Atlas
+IL10,ENSG00000136634,plasmacytoid DC,plasmacytoid DC,normal immune cell,0.0,TPM,Human Protein Atlas
+IL10,ENSG00000136634,total PBMC,total PBMC,normal immune cell,0.1,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,MAIT T-cell,MAIT T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,NK-cell,NK-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,T-reg,T-reg,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,basophil,basophil,normal immune cell,0.9,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,classical monocyte,classical monocyte,normal immune cell,0.3,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,eosinophil,eosinophil,normal immune cell,0.1,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,gdT-cell,gdT-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,intermediate monocyte,intermediate monocyte,normal immune cell,0.1,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,memory B-cell,memory B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,myeloid DC,myeloid DC,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,naive B-cell,naive B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,neutrophil,neutrophil,normal immune cell,273.1,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,non-classical monocyte,non-classical monocyte,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,plasmacytoid DC,plasmacytoid DC,normal immune cell,0.0,TPM,Human Protein Atlas
+CXCL8,ENSG00000169429,total PBMC,total PBMC,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,MAIT T-cell,MAIT T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,NK-cell,NK-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,T-reg,T-reg,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,basophil,basophil,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,classical monocyte,classical monocyte,normal immune cell,6.3,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,eosinophil,eosinophil,normal immune cell,2.6,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,gdT-cell,gdT-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,intermediate monocyte,intermediate monocyte,normal immune cell,0.2,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,memory B-cell,memory B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,myeloid DC,myeloid DC,normal immune cell,0.7,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,naive B-cell,naive B-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,neutrophil,neutrophil,normal immune cell,0.3,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,non-classical monocyte,non-classical monocyte,normal immune cell,0.0,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,plasmacytoid DC,plasmacytoid DC,normal immune cell,0.2,TPM,Human Protein Atlas
+CCL2,ENSG00000108691,total PBMC,total PBMC,normal immune cell,0.8,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,MAIT T-cell,MAIT T-cell,normal immune cell,0.4,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,NK-cell,NK-cell,normal immune cell,6.0,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,T-reg,T-reg,normal immune cell,0.1,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,basophil,basophil,normal immune cell,35.5,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,classical monocyte,classical monocyte,normal immune cell,149.9,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,eosinophil,eosinophil,normal immune cell,1.4,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,gdT-cell,gdT-cell,normal immune cell,0.3,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,intermediate monocyte,intermediate monocyte,normal immune cell,147.6,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,memory B-cell,memory B-cell,normal immune cell,0.3,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,0.9,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,0.3,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,myeloid DC,myeloid DC,normal immune cell,103.4,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,naive B-cell,naive B-cell,normal immune cell,1.0,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,1.1,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,0.2,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,neutrophil,neutrophil,normal immune cell,294.0,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,non-classical monocyte,non-classical monocyte,normal immune cell,100.2,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,plasmacytoid DC,plasmacytoid DC,normal immune cell,1.1,TPM,Human Protein Atlas
+TLR2,ENSG00000137462,total PBMC,total PBMC,normal immune cell,27.7,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,MAIT T-cell,MAIT T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,NK-cell,NK-cell,normal immune cell,0.1,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,T-reg,T-reg,normal immune cell,0.0,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,basophil,basophil,normal immune cell,46.8,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,classical monocyte,classical monocyte,normal immune cell,50.3,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,eosinophil,eosinophil,normal immune cell,17.9,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,gdT-cell,gdT-cell,normal immune cell,0.1,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,intermediate monocyte,intermediate monocyte,normal immune cell,47.7,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,memory B-cell,memory B-cell,normal immune cell,1.2,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,myeloid DC,myeloid DC,normal immune cell,18.9,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,naive B-cell,naive B-cell,normal immune cell,0.4,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,0.0,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,neutrophil,neutrophil,normal immune cell,55.5,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,non-classical monocyte,non-classical monocyte,normal immune cell,52.2,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,plasmacytoid DC,plasmacytoid DC,normal immune cell,0.8,TPM,Human Protein Atlas
+TLR4,ENSG00000136869,total PBMC,total PBMC,normal immune cell,9.7,TPM,Human Protein Atlas
+CD14,ENSG00000170458,MAIT T-cell,MAIT T-cell,normal immune cell,7.4,TPM,Human Protein Atlas
+CD14,ENSG00000170458,NK-cell,NK-cell,normal immune cell,3.8,TPM,Human Protein Atlas
+CD14,ENSG00000170458,T-reg,T-reg,normal immune cell,2.8,TPM,Human Protein Atlas
+CD14,ENSG00000170458,basophil,basophil,normal immune cell,7.5,TPM,Human Protein Atlas
+CD14,ENSG00000170458,classical monocyte,classical monocyte,normal immune cell,2598.2,TPM,Human Protein Atlas
+CD14,ENSG00000170458,eosinophil,eosinophil,normal immune cell,15.2,TPM,Human Protein Atlas
+CD14,ENSG00000170458,gdT-cell,gdT-cell,normal immune cell,6.1,TPM,Human Protein Atlas
+CD14,ENSG00000170458,intermediate monocyte,intermediate monocyte,normal immune cell,509.1,TPM,Human Protein Atlas
+CD14,ENSG00000170458,memory B-cell,memory B-cell,normal immune cell,5.7,TPM,Human Protein Atlas
+CD14,ENSG00000170458,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,3.1,TPM,Human Protein Atlas
+CD14,ENSG00000170458,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,3.4,TPM,Human Protein Atlas
+CD14,ENSG00000170458,myeloid DC,myeloid DC,normal immune cell,338.4,TPM,Human Protein Atlas
+CD14,ENSG00000170458,naive B-cell,naive B-cell,normal immune cell,1.3,TPM,Human Protein Atlas
+CD14,ENSG00000170458,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,4.3,TPM,Human Protein Atlas
+CD14,ENSG00000170458,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,2.7,TPM,Human Protein Atlas
+CD14,ENSG00000170458,neutrophil,neutrophil,normal immune cell,585.0,TPM,Human Protein Atlas
+CD14,ENSG00000170458,non-classical monocyte,non-classical monocyte,normal immune cell,72.8,TPM,Human Protein Atlas
+CD14,ENSG00000170458,plasmacytoid DC,plasmacytoid DC,normal immune cell,21.9,TPM,Human Protein Atlas
+CD14,ENSG00000170458,total PBMC,total PBMC,normal immune cell,1005.0,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,MAIT T-cell,MAIT T-cell,normal immune cell,57.2,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,NK-cell,NK-cell,normal immune cell,56.8,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,T-reg,T-reg,normal immune cell,75.3,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,basophil,basophil,normal immune cell,216.0,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,classical monocyte,classical monocyte,normal immune cell,175.8,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,eosinophil,eosinophil,normal immune cell,241.3,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,gdT-cell,gdT-cell,normal immune cell,72.1,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,intermediate monocyte,intermediate monocyte,normal immune cell,269.1,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,memory B-cell,memory B-cell,normal immune cell,30.7,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,56.5,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,68.9,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,myeloid DC,myeloid DC,normal immune cell,174.4,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,naive B-cell,naive B-cell,normal immune cell,28.3,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,38.0,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,56.6,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,neutrophil,neutrophil,normal immune cell,183.2,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,non-classical monocyte,non-classical monocyte,normal immune cell,352.9,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,plasmacytoid DC,plasmacytoid DC,normal immune cell,92.0,TPM,Human Protein Atlas
+MYD88,ENSG00000172936,total PBMC,total PBMC,normal immune cell,93.5,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,MAIT T-cell,MAIT T-cell,normal immune cell,0.7,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,NK-cell,NK-cell,normal immune cell,1.6,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,T-reg,T-reg,normal immune cell,0.2,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,basophil,basophil,normal immune cell,0.0,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,classical monocyte,classical monocyte,normal immune cell,0.7,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,eosinophil,eosinophil,normal immune cell,0.9,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,gdT-cell,gdT-cell,normal immune cell,0.5,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,intermediate monocyte,intermediate monocyte,normal immune cell,1.4,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,memory B-cell,memory B-cell,normal immune cell,0.4,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,1.4,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,0.9,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,myeloid DC,myeloid DC,normal immune cell,2.1,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,naive B-cell,naive B-cell,normal immune cell,0.4,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,2.0,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,0.9,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,neutrophil,neutrophil,normal immune cell,0.4,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,non-classical monocyte,non-classical monocyte,normal immune cell,1.8,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,plasmacytoid DC,plasmacytoid DC,normal immune cell,0.3,TPM,Human Protein Atlas
+NFKB1,ENSG00000109320,total PBMC,total PBMC,normal immune cell,0.3,TPM,Human Protein Atlas
+RELA,ENSG00000173039,MAIT T-cell,MAIT T-cell,normal immune cell,25.4,TPM,Human Protein Atlas
+RELA,ENSG00000173039,NK-cell,NK-cell,normal immune cell,27.9,TPM,Human Protein Atlas
+RELA,ENSG00000173039,T-reg,T-reg,normal immune cell,18.5,TPM,Human Protein Atlas
+RELA,ENSG00000173039,basophil,basophil,normal immune cell,11.5,TPM,Human Protein Atlas
+RELA,ENSG00000173039,classical monocyte,classical monocyte,normal immune cell,10.6,TPM,Human Protein Atlas
+RELA,ENSG00000173039,eosinophil,eosinophil,normal immune cell,14.9,TPM,Human Protein Atlas
+RELA,ENSG00000173039,gdT-cell,gdT-cell,normal immune cell,24.3,TPM,Human Protein Atlas
+RELA,ENSG00000173039,intermediate monocyte,intermediate monocyte,normal immune cell,14.0,TPM,Human Protein Atlas
+RELA,ENSG00000173039,memory B-cell,memory B-cell,normal immune cell,11.7,TPM,Human Protein Atlas
+RELA,ENSG00000173039,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,18.3,TPM,Human Protein Atlas
+RELA,ENSG00000173039,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,22.2,TPM,Human Protein Atlas
+RELA,ENSG00000173039,myeloid DC,myeloid DC,normal immune cell,13.1,TPM,Human Protein Atlas
+RELA,ENSG00000173039,naive B-cell,naive B-cell,normal immune cell,11.8,TPM,Human Protein Atlas
+RELA,ENSG00000173039,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,16.6,TPM,Human Protein Atlas
+RELA,ENSG00000173039,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,18.7,TPM,Human Protein Atlas
+RELA,ENSG00000173039,neutrophil,neutrophil,normal immune cell,13.5,TPM,Human Protein Atlas
+RELA,ENSG00000173039,non-classical monocyte,non-classical monocyte,normal immune cell,12.9,TPM,Human Protein Atlas
+RELA,ENSG00000173039,plasmacytoid DC,plasmacytoid DC,normal immune cell,14.1,TPM,Human Protein Atlas
+RELA,ENSG00000173039,total PBMC,total PBMC,normal immune cell,6.8,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,MAIT T-cell,MAIT T-cell,normal immune cell,71.6,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,NK-cell,NK-cell,normal immune cell,87.9,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,T-reg,T-reg,normal immune cell,196.6,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,basophil,basophil,normal immune cell,43.0,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,classical monocyte,classical monocyte,normal immune cell,114.0,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,eosinophil,eosinophil,normal immune cell,87.2,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,gdT-cell,gdT-cell,normal immune cell,56.0,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,intermediate monocyte,intermediate monocyte,normal immune cell,159.2,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,memory B-cell,memory B-cell,normal immune cell,26.7,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,122.8,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,79.2,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,myeloid DC,myeloid DC,normal immune cell,52.2,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,naive B-cell,naive B-cell,normal immune cell,23.5,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,116.6,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,89.8,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,neutrophil,neutrophil,normal immune cell,130.9,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,non-classical monocyte,non-classical monocyte,normal immune cell,94.1,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,plasmacytoid DC,plasmacytoid DC,normal immune cell,26.5,TPM,Human Protein Atlas
+STAT1,ENSG00000115415,total PBMC,total PBMC,normal immune cell,80.0,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,MAIT T-cell,MAIT T-cell,normal immune cell,62.6,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,NK-cell,NK-cell,normal immune cell,60.4,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,T-reg,T-reg,normal immune cell,40.9,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,basophil,basophil,normal immune cell,94.0,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,classical monocyte,classical monocyte,normal immune cell,60.8,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,eosinophil,eosinophil,normal immune cell,82.1,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,gdT-cell,gdT-cell,normal immune cell,84.8,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,intermediate monocyte,intermediate monocyte,normal immune cell,65.7,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,memory B-cell,memory B-cell,normal immune cell,28.1,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,53.5,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,61.7,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,myeloid DC,myeloid DC,normal immune cell,46.1,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,naive B-cell,naive B-cell,normal immune cell,29.2,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,52.6,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,53.7,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,neutrophil,neutrophil,normal immune cell,166.2,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,non-classical monocyte,non-classical monocyte,normal immune cell,64.5,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,plasmacytoid DC,plasmacytoid DC,normal immune cell,26.5,TPM,Human Protein Atlas
+STAT3,ENSG00000168610,total PBMC,total PBMC,normal immune cell,49.4,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,MAIT T-cell,MAIT T-cell,normal immune cell,96.0,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,NK-cell,NK-cell,normal immune cell,277.7,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,T-reg,T-reg,normal immune cell,92.1,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,basophil,basophil,normal immune cell,110.0,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,classical monocyte,classical monocyte,normal immune cell,34.2,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,eosinophil,eosinophil,normal immune cell,107.9,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,gdT-cell,gdT-cell,normal immune cell,88.1,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,intermediate monocyte,intermediate monocyte,normal immune cell,46.9,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,memory B-cell,memory B-cell,normal immune cell,55.9,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,72.4,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,91.1,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,myeloid DC,myeloid DC,normal immune cell,50.9,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,naive B-cell,naive B-cell,normal immune cell,49.1,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,74.9,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,67.7,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,neutrophil,neutrophil,normal immune cell,97.9,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,non-classical monocyte,non-classical monocyte,normal immune cell,57.7,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,plasmacytoid DC,plasmacytoid DC,normal immune cell,43.4,TPM,Human Protein Atlas
+JAK1,ENSG00000162434,total PBMC,total PBMC,normal immune cell,46.6,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,MAIT T-cell,MAIT T-cell,normal immune cell,4.4,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,NK-cell,NK-cell,normal immune cell,10.4,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,T-reg,T-reg,normal immune cell,3.9,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,basophil,basophil,normal immune cell,103.3,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,classical monocyte,classical monocyte,normal immune cell,16.6,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,eosinophil,eosinophil,normal immune cell,31.0,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,gdT-cell,gdT-cell,normal immune cell,5.9,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,intermediate monocyte,intermediate monocyte,normal immune cell,16.6,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,memory B-cell,memory B-cell,normal immune cell,3.8,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,3.9,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,3.1,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,myeloid DC,myeloid DC,normal immune cell,22.4,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,naive B-cell,naive B-cell,normal immune cell,3.8,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,2.0,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,2.7,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,neutrophil,neutrophil,normal immune cell,12.4,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,non-classical monocyte,non-classical monocyte,normal immune cell,13.7,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,plasmacytoid DC,plasmacytoid DC,normal immune cell,9.0,TPM,Human Protein Atlas
+JAK2,ENSG00000096968,total PBMC,total PBMC,normal immune cell,3.2,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,MAIT T-cell,MAIT T-cell,normal immune cell,51.1,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,NK-cell,NK-cell,normal immune cell,49.4,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,T-reg,T-reg,normal immune cell,68.5,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,basophil,basophil,normal immune cell,18.3,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,classical monocyte,classical monocyte,normal immune cell,22.5,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,eosinophil,eosinophil,normal immune cell,41.0,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,gdT-cell,gdT-cell,normal immune cell,62.4,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,intermediate monocyte,intermediate monocyte,normal immune cell,23.2,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,memory B-cell,memory B-cell,normal immune cell,25.9,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,52.7,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,54.5,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,myeloid DC,myeloid DC,normal immune cell,18.7,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,naive B-cell,naive B-cell,normal immune cell,26.3,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,44.3,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,43.0,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,neutrophil,neutrophil,normal immune cell,22.6,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,non-classical monocyte,non-classical monocyte,normal immune cell,28.7,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,plasmacytoid DC,plasmacytoid DC,normal immune cell,27.5,TPM,Human Protein Atlas
+IRF3,ENSG00000126456,total PBMC,total PBMC,normal immune cell,18.0,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,MAIT T-cell,MAIT T-cell,normal immune cell,8.0,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,NK-cell,NK-cell,normal immune cell,20.7,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,T-reg,T-reg,normal immune cell,11.4,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,basophil,basophil,normal immune cell,9.6,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,classical monocyte,classical monocyte,normal immune cell,16.4,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,eosinophil,eosinophil,normal immune cell,24.7,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,gdT-cell,gdT-cell,normal immune cell,9.2,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,intermediate monocyte,intermediate monocyte,normal immune cell,39.2,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,memory B-cell,memory B-cell,normal immune cell,11.9,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,6.3,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,6.9,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,myeloid DC,myeloid DC,normal immune cell,20.5,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,naive B-cell,naive B-cell,normal immune cell,13.3,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,6.7,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,7.9,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,neutrophil,neutrophil,normal immune cell,9.0,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,non-classical monocyte,non-classical monocyte,normal immune cell,40.0,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,plasmacytoid DC,plasmacytoid DC,normal immune cell,551.4,TPM,Human Protein Atlas
+IRF7,ENSG00000185507,total PBMC,total PBMC,normal immune cell,6.8,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,MAIT T-cell,MAIT T-cell,normal immune cell,1.0,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,NK-cell,NK-cell,normal immune cell,14.6,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,T-reg,T-reg,normal immune cell,17.1,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,basophil,basophil,normal immune cell,5.1,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,classical monocyte,classical monocyte,normal immune cell,175.1,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,eosinophil,eosinophil,normal immune cell,56.1,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,gdT-cell,gdT-cell,normal immune cell,2.3,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,intermediate monocyte,intermediate monocyte,normal immune cell,278.1,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,memory B-cell,memory B-cell,normal immune cell,278.6,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,memory CD4 T-cell,memory CD4 T-cell,normal immune cell,2.3,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,memory CD8 T-cell,memory CD8 T-cell,normal immune cell,11.2,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,myeloid DC,myeloid DC,normal immune cell,3.9,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,naive B-cell,naive B-cell,normal immune cell,323.4,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,naive CD4 T-cell,naive CD4 T-cell,normal immune cell,1.1,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,naive CD8 T-cell,naive CD8 T-cell,normal immune cell,2.3,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,neutrophil,neutrophil,normal immune cell,9.8,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,non-classical monocyte,non-classical monocyte,normal immune cell,178.5,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,plasmacytoid DC,plasmacytoid DC,normal immune cell,192.9,TPM,Human Protein Atlas
+HLA-DRA,ENSG00000204287,total PBMC,total PBMC,normal immune cell,99.7,TPM,Human Protein Atlas
