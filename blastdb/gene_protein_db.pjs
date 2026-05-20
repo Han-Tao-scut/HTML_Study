@@ -1,0 +1,24 @@
+{
+  "version": "1.2",
+  "dbname": "gene_protein_db",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/workspaces/HTML_Study/data/protein_sequences.fasta",
+  "number-of-letters": 10059,
+  "number-of-sequences": 20,
+  "last-updated": "2026-05-20T14:02:00",
+  "number-of-volumes": 1,
+  "bytes-total": 61422,
+  "bytes-to-cache": 10384,
+  "files": [
+    "gene_protein_db.pdb",
+    "gene_protein_db.phr",
+    "gene_protein_db.pin",
+    "gene_protein_db.pog",
+    "gene_protein_db.pos",
+    "gene_protein_db.pot",
+    "gene_protein_db.psq",
+    "gene_protein_db.ptf",
+    "gene_protein_db.pto"
+  ]
+}
