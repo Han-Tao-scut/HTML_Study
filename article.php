@@ -715,8 +715,7 @@
                     Supplementary Table 1. Processed tables generated in this study will be made available upon
                     publication or deposited with the analysis code.</p>
                 <h3 id="code-availability">Code availability</h3>
-                <p>All scripts required to reproduce the downstream analyses will be deposited in a public GitHub
-                    repository before publication. The repository URL will be added before submission.</p>
+                <p>All scripts required to reproduce the downstream analyses can download from the Github repository：https://github.com/Han-Tao-scut/stool_metagenomics.git.</p>
                 <h2 id="supplementary-tables">Supplementary tables</h2>
                 <p><strong>Supplementary Table 1 | Final sample manifest and group assignment.</strong> Sample
                     identifiers, group labels and inclusion status for the 208 metagenomes retained in the locked
