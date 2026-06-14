@@ -30,6 +30,101 @@ function gene_payload_from_post(): array
     ];
 }
 
+function import_expression_rows(PDO $pdo, $handle, string $sourceName, string $sourceLabel): array
+{
+    $inserted = 0;
+    $skipped = 0;
+    $header = fgetcsv($handle);
+    $required = ['gene_symbol', 'sample_name', 'tissue', 'condition_name', 'expression_value', 'expression_unit'];
+
+    if ($header === false) {
+        throw new RuntimeException('没有找到表达矩阵表头。');
+    }
+
+    $header = array_map('trim', $header);
+    if (array_diff($required, $header)) {
+        throw new RuntimeException('表头不正确。需要 gene_symbol,sample_name,tissue,condition_name,expression_value,expression_unit');
+    }
+
+    $index = array_flip($header);
+    $pdo->beginTransaction();
+
+    $geneStmt = $pdo->prepare("SELECT id, species FROM genes WHERE gene_symbol = :gene_symbol LIMIT 1");
+    $sampleFindStmt = $pdo->prepare("SELECT id FROM samples WHERE sample_name = :sample_name LIMIT 1");
+    $sampleInsertStmt = $pdo->prepare("
+        INSERT INTO samples (sample_name, tissue, condition_name, species, source_database, description)
+        VALUES (:sample_name, :tissue, :condition_name, :species, :source_database, :description)
+    ");
+    $exprStmt = $pdo->prepare("
+        INSERT INTO expression (gene_id, sample_id, expression_value, expression_unit)
+        VALUES (:gene_id, :sample_id, :expression_value, :expression_unit)
+        ON DUPLICATE KEY UPDATE
+            expression_value = VALUES(expression_value),
+            expression_unit = VALUES(expression_unit)
+    ");
+
+    while (($row = fgetcsv($handle)) !== false) {
+        $geneSymbol = trim($row[$index['gene_symbol']] ?? '');
+        $sampleName = trim($row[$index['sample_name']] ?? '');
+        $tissue = trim($row[$index['tissue']] ?? '');
+        $conditionName = trim($row[$index['condition_name']] ?? '');
+        $expressionValue = trim($row[$index['expression_value']] ?? '');
+        $expressionUnit = trim($row[$index['expression_unit']] ?? 'TPM');
+
+        if ($geneSymbol === '' || $sampleName === '' || $expressionValue === '' || !is_numeric($expressionValue)) {
+            $skipped++;
+            continue;
+        }
+
+        $geneStmt->execute([':gene_symbol' => $geneSymbol]);
+        $gene = $geneStmt->fetch();
+        if (!$gene) {
+            $skipped++;
+            continue;
+        }
+
+        $sampleFindStmt->execute([':sample_name' => $sampleName]);
+        $sample = $sampleFindStmt->fetch();
+
+        if ($sample) {
+            $sampleId = (int)$sample['id'];
+        } else {
+            $sampleInsertStmt->execute([
+                ':sample_name' => $sampleName,
+                ':tissue' => $tissue,
+                ':condition_name' => $conditionName,
+                ':species' => $gene['species'],
+                ':source_database' => $sourceLabel,
+                ':description' => $sourceLabel === 'Manual input' ? 'Imported from manual expression input' : 'Imported from expression CSV'
+            ]);
+            $sampleId = (int)$pdo->lastInsertId();
+        }
+
+        $exprStmt->execute([
+            ':gene_id' => $gene['id'],
+            ':sample_id' => $sampleId,
+            ':expression_value' => $expressionValue,
+            ':expression_unit' => $expressionUnit !== '' ? $expressionUnit : 'TPM'
+        ]);
+        $inserted++;
+    }
+
+    $logStmt = $pdo->prepare("
+        INSERT INTO import_logs (file_name, import_type, records_inserted, notes)
+        VALUES (:file_name, :import_type, :records_inserted, :notes)
+    ");
+    $logStmt->execute([
+        ':file_name' => $sourceName,
+        ':import_type' => $sourceLabel === 'Manual input' ? 'expression_manual' : 'expression_csv',
+        ':records_inserted' => $inserted,
+        ':notes' => 'Skipped rows: ' . $skipped
+    ]);
+
+    $pdo->commit();
+
+    return [$inserted, $skipped];
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'add') {
     $payload = gene_payload_from_post();
 
@@ -105,99 +200,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'delet
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'import_expression') {
-    if (!isset($_FILES['expression_csv']) || $_FILES['expression_csv']['error'] !== UPLOAD_ERR_OK) {
-        $error = '请上传有效的 expression CSV 文件。';
-    } else {
-        $tmpName = $_FILES['expression_csv']['tmp_name'];
-        $originalName = $_FILES['expression_csv']['name'];
-        $inserted = 0;
-        $skipped = 0;
+    $manualExpression = trim($_POST['expression_manual'] ?? '');
+    $uploadError = $_FILES['expression_csv']['error'] ?? UPLOAD_ERR_NO_FILE;
 
+    if ($uploadError === UPLOAD_ERR_OK) {
         try {
-            $handle = fopen($tmpName, 'r');
-            $header = fgetcsv($handle);
-            $required = ['gene_symbol', 'sample_name', 'tissue', 'condition_name', 'expression_value', 'expression_unit'];
-
-            if ($header === false || array_diff($required, $header)) {
-                throw new RuntimeException('CSV 表头不正确。需要 gene_symbol,sample_name,tissue,condition_name,expression_value,expression_unit');
+            $handle = fopen($_FILES['expression_csv']['tmp_name'], 'r');
+            if ($handle === false) {
+                throw new RuntimeException('无法读取上传的 CSV 文件。');
             }
-
-            $index = array_flip($header);
-            $pdo->beginTransaction();
-
-            $geneStmt = $pdo->prepare("SELECT id, species FROM genes WHERE gene_symbol = :gene_symbol LIMIT 1");
-            $sampleFindStmt = $pdo->prepare("SELECT id FROM samples WHERE sample_name = :sample_name LIMIT 1");
-            $sampleInsertStmt = $pdo->prepare("
-                INSERT INTO samples (sample_name, tissue, condition_name, species, source_database, description)
-                VALUES (:sample_name, :tissue, :condition_name, :species, :source_database, :description)
-            ");
-            $exprStmt = $pdo->prepare("
-                INSERT INTO expression (gene_id, sample_id, expression_value, expression_unit)
-                VALUES (:gene_id, :sample_id, :expression_value, :expression_unit)
-                ON DUPLICATE KEY UPDATE
-                    expression_value = VALUES(expression_value),
-                    expression_unit = VALUES(expression_unit)
-            ");
-
-            while (($row = fgetcsv($handle)) !== false) {
-                $geneSymbol = trim($row[$index['gene_symbol']] ?? '');
-                $sampleName = trim($row[$index['sample_name']] ?? '');
-                $tissue = trim($row[$index['tissue']] ?? '');
-                $conditionName = trim($row[$index['condition_name']] ?? '');
-                $expressionValue = trim($row[$index['expression_value']] ?? '');
-                $expressionUnit = trim($row[$index['expression_unit']] ?? 'TPM');
-
-                if ($geneSymbol === '' || $sampleName === '' || $expressionValue === '' || !is_numeric($expressionValue)) {
-                    $skipped++;
-                    continue;
-                }
-
-                $geneStmt->execute([':gene_symbol' => $geneSymbol]);
-                $gene = $geneStmt->fetch();
-                if (!$gene) {
-                    $skipped++;
-                    continue;
-                }
-
-                $sampleFindStmt->execute([':sample_name' => $sampleName]);
-                $sample = $sampleFindStmt->fetch();
-
-                if ($sample) {
-                    $sampleId = (int)$sample['id'];
-                } else {
-                    $sampleInsertStmt->execute([
-                        ':sample_name' => $sampleName,
-                        ':tissue' => $tissue,
-                        ':condition_name' => $conditionName,
-                        ':species' => $gene['species'],
-                        ':source_database' => 'CSV import',
-                        ':description' => 'Imported from expression CSV'
-                    ]);
-                    $sampleId = (int)$pdo->lastInsertId();
-                }
-
-                $exprStmt->execute([
-                    ':gene_id' => $gene['id'],
-                    ':sample_id' => $sampleId,
-                    ':expression_value' => $expressionValue,
-                    ':expression_unit' => $expressionUnit !== '' ? $expressionUnit : 'TPM'
-                ]);
-                $inserted++;
-            }
-
+            [$inserted, $skipped] = import_expression_rows($pdo, $handle, $_FILES['expression_csv']['name'], 'CSV import');
             fclose($handle);
-
-            $logStmt = $pdo->prepare("
-                INSERT INTO import_logs (file_name, import_type, records_inserted, notes)
-                VALUES (:file_name, 'expression_csv', :records_inserted, :notes)
-            ");
-            $logStmt->execute([
-                ':file_name' => $originalName,
-                ':records_inserted' => $inserted,
-                ':notes' => 'Skipped rows: ' . $skipped
-            ]);
-
-            $pdo->commit();
             $message = '表达数据导入完成：成功处理 ' . $inserted . ' 行，跳过 ' . $skipped . ' 行。';
         } catch (Throwable $e) {
             if ($pdo->inTransaction()) {
@@ -208,6 +221,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'impor
             }
             $error = '导入失败：' . $e->getMessage();
         }
+    } elseif ($manualExpression !== '') {
+        try {
+            $handle = fopen('php://temp', 'r+');
+            if ($handle === false) {
+                throw new RuntimeException('无法读取手动输入的表达数据。');
+            }
+            fwrite($handle, $manualExpression);
+            rewind($handle);
+            [$inserted, $skipped] = import_expression_rows($pdo, $handle, 'manual expression input', 'Manual input');
+            fclose($handle);
+            $message = '表达数据导入完成：成功处理 ' . $inserted . ' 行，跳过 ' . $skipped . ' 行。';
+        } catch (Throwable $e) {
+            if ($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            if (isset($handle) && is_resource($handle)) {
+                fclose($handle);
+            }
+            $error = '导入失败：' . $e->getMessage();
+        }
+    } elseif ($uploadError !== UPLOAD_ERR_NO_FILE) {
+        $error = '请上传有效的 expression CSV 文件，或在文本框中手动输入表达数据。';
+    } else {
+        $error = '请上传 expression CSV 文件，或在文本框中手动输入表达数据。';
     }
 }
 
@@ -476,12 +513,16 @@ $geneList = $pdo->query("
 
         <section class="card">
             <h2>Import Immune-cell Expression Matrix</h2>
-            <p class="note">CSV import expects gene_symbol, sample_name, tissue, condition_name, expression_value and expression_unit. Imported rows are mapped to existing gene records by gene_symbol.</p>
+            <p class="note">CSV upload or manual input expects gene_symbol, sample_name, tissue, condition_name, expression_value and expression_unit. Imported rows are mapped to existing gene records by gene_symbol.</p>
             <form method="POST" action="admin.php" enctype="multipart/form-data">
                 <input type="hidden" name="action" value="import_expression">
                 <div class="form-group">
                     <label for="expression_csv">Expression CSV</label>
-                    <input type="file" id="expression_csv" name="expression_csv" accept=".csv,text/csv" required>
+                    <input type="file" id="expression_csv" name="expression_csv" accept=".csv,text/csv">
+                </div>
+                <div class="form-group full">
+                    <label for="expression_manual">Manual expression data</label>
+                    <textarea id="expression_manual" name="expression_manual" placeholder="gene_symbol,sample_name,tissue,condition_name,expression_value,expression_unit&#10;CD3D,T cell,Immune cell,Normal,32.4,TPM"></textarea>
                 </div>
                 <button type="submit" class="btn">Import Expression Matrix</button>
             </form>
